@@ -1,0 +1,507 @@
+body{
+margin: 0;
+background-color: #ffac2f;
+background-repeat: no-repeat;
+background-size: cover;
+overflow-x: hidden;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+/*Параметри тексту, який знаходиться в навігаційному меню*/
+nav a{
+position: absolute;
+color: #f9f9f9;
+text-decoration: none;
+font-size: 40px;
+font-weight: bold;
+transition: background-color 1.0s ease, border-radius 1.0s ease;
+}
+
+/*Робимо анімацію тексту, який знаходиться в навігаційному меню*/
+nav a:hover {
+background-color: #ffb367; 
+transition: 1s;
+padding: 5px 10px;
+border-radius: 35px;
+height: 45px;
+}
+
+/*Задаємо розмір, колір, ширину, висоту, заокруглення рамки, шрифт тексту, для навігаційного меню*/
+.navigation_menu{
+background-color: brown;
+position: absolute;
+font-family: Arial, Helvetica, sans-serif;
+height: 180px;
+width: 1035px;
+border-radius: 40px;
+left: 240px;
+top: 100px;
+}
+
+/*Назва розділу 1*/
+.nazvablock1{
+position: absolute;
+left: 350px;
+top: 360px;
+color: #f9f9f9;
+font-size: 43px;
+}
+
+/*Задаємо параметри тексту 1, який знаходиться в першому розділі*/
+.oznayomlennya1{
+position: absolute;
+font-size: 48px;
+left: -90px;
+top: 530px;
+color: brown;
+}
+
+/*Задаємо параметри тексту 2, який знаходиться в першому розділі*/
+.oznayomlennya2{
+position: absolute;
+font-size: 42px;
+left: 50px;
+top: 740px;
+color: brown;
+}
+
+/*Задаємо параметри тексту 3, який знаходиться в першому розділі*/
+.oznayomlennya3{
+position: absolute;
+font-size: 42px;
+left: -80px;
+top: 930px;
+color: brown;
+}
+
+/*Задаємо параметри тексту 4, який знаходиться в першому розділі*/
+.oznayomlennya4{
+position: absolute;
+font-size: 42px;
+left: 160px;
+top: 1100px;
+color: brown;
+}
+
+/*Перехідна лінія один*/
+.perehid_line_1{
+position: absolute;
+top: -10px;
+width: 1519px;
+}
+
+/*Розділ 2*/
+.block_2{
+position: absolute;
+background-color: #FFCC99;
+height: 4000px;
+top: 1300px;
+width: 1519px;
+}
+/*Назва розділу 2*/
+.nazvablock2{
+position: absolute;
+left: 430px;
+top: 260px;
+color: #f9f9f9;
+font-size: 90px;
+}
+
+/*Анімація для першого зображення*/
+#animation-container{
+animation-duration: 4s; /*Тривалість анімації для обох картинок*/
+animation-name: slidein1; /* Названия анимаций для каждой картинки */
+animation-iteration-count: infinite; /*Бескінечна кількість повторів*/
+animation-timing-function: linear; /*Лінійна анімація без пауз*/
+}
+
+/*Анімація для другого зображення*/
+#animation-container2{
+animation-duration: 4s; /*Тривалість анімації для обох картинок*/
+animation-name: slidein2; /* Названия анимаций для каждой картинки */
+animation-iteration-count: infinite; /*Бескінечна кількість повторів*/
+animation-timing-function: linear; /*Лінійна анімація без пауз*/
+}
+
+.slidein1{
+width: 85px; /*Ширина зображення*/
+height: 85px; /*Висота зображення*/
+background-image: url(../MineGuard.com/images/super_patron.png);
+}
+
+.slidein2{
+width: 150px; /*Ширина зображення*/
+height: 150px; /*Висота зображення*/
+background-image: url(../MineGuard.com/images/super_patron2.png);
+}
+
+@keyframes slidein1{
+  0%{
+      transform: translateX(100%); /*Початкове положення для першої картинки*/
+  }
+  33.33%{
+      transform: translateX(-20%); /*Кінцеве положення для першої картинки*/
+  }
+  66.66%, 100%{
+      transform: translateX(-70%); /*Залишатися на місці (пауза)*/
+      display: '';
+  }
+}
+
+@keyframes slidein2{
+  0%, 33.33%{
+      transform: translateX(-100%); /*Пауза для другої картинки*/
+      display: '';
+  }
+  66.66%{
+      transform: translateX(0%); /*Початкове положення для першої картинки*/
+  }
+  100%{
+      transform: translateX(130%); /*Кінцеве положення для першої картинки*/
+  }
+}
+
+/*Задній фон 1-го відео*/
+.bgvideo1{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 60px;
+top: 600px;
+border-radius: 40px;
+background-color:#3985f8;
+}
+
+/*Параметри для всіх відео*/
+.all_multfilm_videos{
+position: absolute;
+left: 50px;
+top: 40px;
+}
+
+/*Задній фон 2-го відео*/
+.bgvideo2{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 790px;
+top: 950px;
+border-radius: 40px;
+background-color: #16b952;
+}
+
+/*Задній фон 3-го відео*/
+.bgvideo3{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 60px;
+top: 1300px;
+border-radius: 40px;
+background-color: #f83982;
+}
+
+/*Задній фон 4-го відео*/
+.bgvideo4{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 790px;
+top: 1650px;
+border-radius: 40px;
+background-color: #521b85;
+}
+
+/*Задній фон 5-го відео*/
+.bgvideo5{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 60px;
+top: 2000px;
+border-radius: 40px;
+background-color: #ea5b2c;
+}
+
+/*Задній фон 6-го відео*/
+.bgvideo6{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 790px;
+top: 2350px;
+border-radius: 40px;
+background-color: #519ff1;
+}
+
+/*Задній фон 7-го відео*/
+.bgvideo7{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 60px;
+top: 2700px;
+border-radius: 40px;
+background-color: #ffd700;
+}
+
+/*Задній фон 8-го відео*/
+.bgvideo8{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 790px;
+top: 3050px;
+border-radius: 40px;
+background-color: #a1a1a1;
+}
+
+/*Задній фон 9-го відео*/
+.bgvideo9{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 60px;
+top: 3400px;
+border-radius: 40px;
+background-color: #71bdff;
+}
+
+/*Задній фон 10-го відео*/
+.bgvideo10{
+position: absolute;
+height: 570px;
+width: 720px;
+left: 27%;
+top: 45%;
+border-radius: 40px;
+background-color: #71bdff;
+}
+
+/*Інтерактивний урок (відео)*/
+.show_it_kids_video{
+position: absolute;
+left: 50px;
+top: 40px;
+}
+
+/*Розділ 3*/
+.show_it_kids{
+position: absolute;
+background-color: #f83939;
+height: 1100px;
+width: 1519px;
+top: 5200px;
+}
+
+/*Перехідна лінія 2*/
+.perehid_line_2{
+position: absolute;
+top: -10px;
+}
+
+/*Назва розділу 3*/
+.nazvablock3{
+position: absolute;
+left: 290px;
+top: 240px;
+color: #f9f9f9;
+font-size: 65px;
+}
+
+/*Розділ 4*/
+.block_4{
+position: absolute;
+height: 2430px;
+width: 1519px;
+top: 6300px;
+background-color: #064763;
+}
+
+/*Назва розділу 4*/
+.nazvablock4{
+position: absolute;
+left: 455px;
+top: 200px;
+color: #f9f9f9;
+font-size: 80px;
+}
+
+/*Перехідна лінія 3*/
+.perehid_line_3{
+position: relative;
+top: -10px;
+}
+
+/*Задній фон 11-го відео*/
+.bgvideo11{
+position: absolute;
+height: 440px;
+width: 650px;
+left: 60px;
+top: 500px;
+border-radius: 40px;
+background-color: #FFCC99;
+transition: 1s;
+}
+
+/*Анімація збільшення для відео 11*/
+.bgvideo11:hover{
+scale: 1.1;
+}
+
+.all_viktorini{
+position: absolute;
+top: 30px;
+left: 30px;
+}
+
+/*Задній фон 12-го відео*/
+.bgvideo12{
+position: absolute;
+height: 440px;
+width: 650px;
+left: 790px;
+top: 850px;
+border-radius: 40px;
+background-color: #519ff1;
+transition: 1s;
+}
+
+/*Анімація збільшення для відео 12*/
+.bgvideo12:hover{
+scale: 1.1;
+}
+
+/*Задній фон 13-го відео*/
+.bgvideo13{
+position: absolute;
+height: 440px;
+width: 650px;
+left: 60px;
+top: 1200px;
+border-radius: 40px;
+background-color: #ea5b2c;
+transition: 1s;
+}
+
+/*Анімація збільшення для відео 13*/
+.bgvideo13:hover{
+scale: 1.1;
+}
+
+/*Задній фон 14-го відео*/
+.bgvideo14{
+position: absolute;
+height: 440px;
+width: 650px;
+left: 790px;
+top: 1550px;
+border-radius: 40px;
+background-color: #f83939;
+transition: 1s;
+}
+
+/*Анімація збільшення для відео 14*/
+.bgvideo14:hover{
+scale: 1.1;
+}
+
+/*Задній фон 15-го відео*/
+.bgvideo15{
+position: absolute;
+height: 440px;
+width: 650px;
+left: 60px;
+top: 1900px;
+border-radius: 40px;
+background-color: #ffa4a4;
+transition: 1s;
+}
+
+/*Анімація збільшення для відео 15*/
+.bgvideo15:hover{
+scale: 1.1;
+}
+
+.audioButton6{
+position: absolute;
+top: 550px;
+left: 530px;
+width: 240px;
+border-radius: 30px;
+height: 40px;
+border: black;
+color: white;
+background-color: rgb(25, 190, 255);
+font-size: 25px;
+scale: 1.2;
+}
+
+.audioButton8{
+position: absolute;
+top: 660px;
+left: 330px;
+width: 220px;
+border-radius: 30px;
+height: 30px;
+border: black;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(255, 43, 43);
+font-size: 25px;
+scale: 1.0;
+}
+    
+.block_5{
+position: absolute;
+height: 1040px;
+width: 1519px;
+background-color: #FFCC99;
+top: 2400px;
+}
+    
+.online-kvest{
+position: absolute;
+left: -60px;
+scale: 0.39;
+top: 100px;
+}
+
+.pes_patron_qrcode{
+position: absolute;
+scale: 0.39;
+left: 280px;
+top: 100px;
+}
+
+.patron_hero{
+position: absolute;
+scale: 1.3;
+top: 510px;
+left: 230px;
+scale: 1.5;
+}
+
+.nepidhod_qrcode{
+position: absolute;
+scale: 0.4;
+left: -50px;
+top: 410px;
+}
+
+.minna_bezpeka_qrcode{
+position: absolute;
+scale: 0.4;
+left: 280px;
+top: 410px;
+}
+
+.fixed-button {
+position: fixed; 
+top: 80px;
+left: 1360px; 
+}

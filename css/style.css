@@ -1,0 +1,742 @@
+body{
+margin: 0;
+background-color: #064763;
+background-repeat: no-repeat;
+background-size: cover;
+overflow-x: hidden;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+/*Задаємо розмір, колір, текстові декорації для тексту в навігаційному меню*/
+nav a{
+position: relative;
+color: #064763;
+text-decoration: none;
+font-size: 38px;
+font-weight: bold;
+transition: background-color 1.0s ease, border-radius 1.0s ease;
+}
+
+/*Робимо анімацію тексту, який знаходиться в навігаційному меню*/
+nav a:hover {
+background-color: #FFCC99; 
+transition: 1s;
+padding: 5px 10px;
+border-radius: 35px;
+height: 40px;
+}
+
+/*Задаємо розмір, колір, ширину, висоту, заокруглення рамки, шрифт тексту, для навігаційного меню*/
+.navigation_menu{
+background-color: #efefef;
+position: absolute;
+font-family: Arial, Helvetica, sans-serif;
+height: 200px;
+width: 1035px;
+border-radius: 40px;
+left: 240px;
+top: 80px;
+}
+
+/*Робимо параметри для тексту 1 в "Розділі 1"*/
+.opus_projecty{
+position: absolute;
+font-family: Arial, Helvetica, sans-serif;
+top: 470px;
+left: 320px;
+color: #f9f9f9;
+font-size: 30px;
+}
+
+/*Задаємо розмір, колір, текстові декорації для тексту в навігаційному меню*/
+.progravach{
+position: absolute;
+height: 440px;
+top: 460px;
+left: -100px;
+}
+
+/*Перехідна лінія 2*/
+.perehid_line1{
+position: relative;
+top: 680px; /*fill="#f3f4f5"*/
+}
+
+/*Розділ 1*/
+.block1{
+position: absolute;
+background-color: #FFCC99;
+width: 1519px;
+height: 70px;
+top: 1050px;
+}
+
+/*Робимо параметри для тексту 2 в "Розділі 1"*/
+.opus_projecty2{
+position: absolute;
+color: black;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+top: -110px;
+left: 125px;
+}
+
+/*Перехідна лінія 2*/
+.perehid_line2{
+position: absolute;
+top: -10px;  
+}
+
+/*Розділ 2*/
+.block2{
+position: absolute;
+background-color: #db168c;   /*#db168c*/
+width: 1519px;
+height: 900px;
+top: 1080px;
+}
+
+/*Міркуючий хлопець*/
+.thinking_boy{
+position: absolute;
+height: 590px;
+left: 1000px;
+top: 1360px;
+}
+
+/*Назва 2-го розділу*/
+.whatismine{
+position: absolute;
+top: 220px;
+left: 130px;
+color: #f3f4f5; 
+font-size: 52px;
+}
+
+/*Робимо параметри для тексту 1 в "Розділі 2"*/
+.mineis{
+position: absolute;
+top: 340px;
+left: 50px;
+font-size: 28px;
+color: #fbca98;   /*#d2d4d4*/
+}
+
+/*Робимо параметри для тексту 2 в "Розділі 2"*/
+.mineis2{
+position: absolute;
+top: 500px;
+left: 140px;
+font-size: 28px;
+color: #fbca98;
+}
+
+/*Робимо параметри для тексту 3 в "Розділі 2"*/
+.mineis3{
+position: absolute;
+top: 690px;
+left: 100px;
+font-size: 28px;
+color: #fbca98;
+}
+
+/*Картинка міни*/
+.mina{
+position: absolute;
+top: 530px;
+left: 20px;
+height: 210px;
+width: 290px;
+}
+
+/*Картинка гранати*/
+.granata{
+position: absolute;
+top: 710px;
+height: 180px;
+left: 1010px;
+transform: rotate(30deg);
+}
+
+/*Картинка знаряду*/
+.snaryad{
+position: absolute;
+height: 210px;
+top: 320px;
+left: 1040px;
+transform: rotate(-35deg);
+}
+/*Розділ 3*/
+.block3{
+position: absolute;
+background-color: #ff6d1f;
+top: 1980px;
+height: 860px;
+width: 1519px;
+}
+
+/*Перехіддна лінія 3*/
+.perehid_line3{
+position: relative;
+top: -30px;
+}
+
+/*Назва 3-го розділу*/
+.nazva_block3{
+position: absolute;
+left: 310px;
+top: 20px;
+color: #f3f4f5;
+font-size: 60px;
+}
+
+/*Налаштування слайдер-контейнеру*/
+.slider-container{
+position: relative;
+width: 80%;
+left: 0px;
+top: 210px;
+margin: auto;
+overflow: hidden;
+}
+
+/*Анімація слайдеру*/
+.slider{
+display: flex;
+transition: transform 2.0s ease-in-out;
+}
+.slide{
+flex: 0 0 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+/*Задній фон слайду*/
+.bgslide{
+position: relative;
+background-color: #f9f9f9;
+border-radius: 35px;
+width: auto;
+}
+
+/*Налаштування головної картинки слайдеру*/
+.slide img{
+max-width: 100%;
+margin-top: 40px;
+height: 280px;
+}
+
+/*Головний текст слайду*/
+.slide-glavnyitext{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 30px;
+}
+
+/*Опис слайду*/
+.slide-text{
+margin-top: 10px;
+}
+
+/*Перехідна лінія 4*/
+.perehid_line4{
+position: absolute;
+top: -10px;
+}
+
+/*Розділ 4*/
+.block4{
+position: absolute;
+background-color: #FFCC99;
+height: 3050px;
+width: 1519px;
+top: 2830px;
+}
+
+/*Назва 4-го розділу*/
+.nazva_block4{
+position: absolute;
+left: 400px;
+top: 240px;
+color: #f9f9f9;
+font-size: 85px;
+transition: 1s;
+}
+
+/*Пес Патрон*/
+.pespatron{
+position: absolute; 
+left: 850px; 
+top: 240px; 
+height: 540px;
+transition: 1s;
+}
+
+/*Анімація Пса Патрона*/
+.pespatron:hover{
+left: 820px;
+top: 200px;
+height: 590px;
+}
+
+/*Картинка "НЕ чіпай"*/
+.dont_touch{
+position: absolute;
+top: 900px;
+left: 550px;
+transition: 1.5s;
+}
+
+/*Анімація картинки "НЕ чіпай"*/
+.dont_touch:hover{
+position: absolute;
+top: 890px;
+height: 200px;
+width: 180px;
+left: 530px;
+}
+
+/*Картинка "НЕ підходь"*/
+.ne_pidhod{
+position: absolute;
+height: 160px;
+width: 150px;
+top: 1260px;
+left: 1310px;
+transition: 2s;
+}
+
+/*Анімація картинки "НЕ підходь"*/
+.ne_pidhod:hover{
+position: absolute;
+top: 1260px;
+height: 180px;
+width: 170px;
+left: 1290px;
+}
+
+/*Картинка "Дзвони 101"*/
+.dzvoni_101{
+position: absolute;
+height: 160px;
+width: 150px;
+top: 1615px;
+left: 580px;
+transition: 2s;
+}
+
+/*Анімація картинки "Дзвони 101"*/
+.dzvoni_101:hover{
+position: absolute;
+height: 180px;
+width: 170px;
+left: 560px;
+}
+
+/*Задній фон 1-го відео*/
+.bgvideo1{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 60px;
+top: 430px;
+border-radius: 40px;
+background-color: #00cba9;
+}
+
+/*Параметри для всіх відео*/
+.all_osvit_videos{
+position: relative;
+left: 50px;
+top: 47px;
+}
+
+/*Задній фон 2-го відео*/
+.bgvideo2{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 790px;
+top: 780px;
+border-radius: 40px;
+background-color: #ff5990;
+}
+
+/*Задній фон 3-го відео*/
+.bgvideo3{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 60px;
+top: 1130px;
+border-radius: 40px;
+background-color: #ff6d1f;
+}
+
+/*Задній фон 4-го відео*/
+.bgvideo4{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 790px;
+top: 1480px;
+border-radius: 40px;
+background-color: #fe5050;
+}
+
+/*Задній фон 5-го відео*/
+.bgvideo5{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 60px;
+top: 1830px;
+border-radius: 40px;
+background-color: rgb(255, 229, 233);
+}
+
+/*Задній фон 6-го відео*/
+.bgvideo6{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 790px;
+top: 2180px;
+border-radius: 40px;
+background-color: #ff4d97;
+}
+
+/*Задній фон 7-го відео*/
+.bgvideo7{
+position: absolute;
+height: 420px;
+width: 650px;
+left: 60px;
+top: 2530px;
+border-radius: 40px;
+background-color: #f32ea4;
+}
+
+/*Підвал сайту*/
+.pidval{
+background-color: #fe5050;
+position: absolute;
+font-family: Arial, Helvetica, sans-serif;
+height: 1710px;
+top: 5800px;
+width: 1519px;
+left: 0px; 
+}
+
+/*Назва підвалу сайта*/
+.zalishte_vidguk{
+position: absolute;
+top: 240px;
+left: 330px;
+font-size: 90px;
+color: #f9f9f9;
+}
+
+/*Задній фон новин 1*/
+.bg_novini1{
+position: absolute;
+background-color: #FFCC99;
+border-radius: 40px;
+top: 1120px;
+left: 60px;
+height: 430px;
+width: 390px;
+}
+
+/*Задній фон новин 2*/
+.bg_novini2{
+position: absolute;
+background-color: #FFCC99;
+border-radius: 40px;
+top: 1120px;
+left: 560px;
+height: 430px;
+width: 390px;
+}
+
+/*Задній фон новин 3*/
+.bg_novini3{
+position: absolute;
+background-color: #FFCC99;
+border-radius: 40px;
+top: 1120px;
+left: 1060px;
+height: 430px;
+width: 390px;
+}
+
+/*Анімація збільшення для новин 1*/
+.bg_novini1:hover{
+scale: 1.1;
+transition: 1s;
+}
+
+/*Анімація збільшення для новин 2*/
+.bg_novini2:hover{
+scale: 1.1;
+transition: 1s;
+}
+
+/*Анімація збільшення для новин 3*/
+.bg_novini3:hover{
+scale: 1.1;
+transition: 1.1s;
+}
+
+/*Форма відгуку*/
+#vidguk-forma{
+height: 410px;
+width: 680px;
+background-color: #FFCC99;
+border-radius: 35px;
+}
+
+/*Введення свого ім'я*/
+#name{
+position: absolute;
+height: 40px;
+top: 100px;
+width: 300px;
+left: 240px;
+border-radius: 25px;
+font-size: 25px;
+border: black;
+}
+
+/*Текст, який знаходиться в input*/
+::placeholder{
+position: absolute;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+left: 50px;
+}
+
+/*Поле для відгуку*/
+textarea{
+position: absolute;
+top: 170px;
+border-radius: 25px;
+height: 150px;
+left: 240px;
+width: 400px;
+font-size: 25px;
+border: black;
+}
+
+/*Кнопка*/
+button{
+position: absolute;
+top: 350px;
+left: 230px;
+border-radius: 30px;
+height: 40px;
+width: 240px;
+border: black;
+color: #f9f9f9;
+background-color: rgb(25, 190, 255);
+font-size: 25px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Зафіксована кнопка повернення*/
+.fixed-button {
+position: fixed; 
+top: 80px;
+left: 1400px; 
+}
+
+/*Розділ корисні посилання*/
+.corisni_posilannya{
+position: absolute;
+width: 1519px;
+height: 600px;
+top: 7500px;
+background-color: #064763;
+}
+
+/*Кнопка Головна*/
+.golovna{
+position: absolute; 
+text-decoration: none; 
+color: #fefefe; 
+top: 300px;
+left: 400px;
+font-family: Arial, Helvetica, sans-serif;
+transition: 1s;
+}
+
+/*Анімація кнопки Головна*/
+.golovna:hover{
+color: #fbca98;
+}
+
+/*Кнопка Про міни*/
+.howlookismine{
+position: absolute; 
+text-decoration: none; 
+color: #fefefe; 
+top: 300px;
+left: 560px;
+font-family: Arial, Helvetica, sans-serif;
+transition: 1s;
+}
+
+/*Анімація кнопки Про міни*/
+.howlookismine:hover{
+color: #fbca98;
+}
+
+/*Кнопка Освітній портал*/
+.osvita{
+position: absolute; 
+text-decoration: none; 
+color: #fefefe; 
+top: 345px;
+left: 560px;
+font-family: Arial, Helvetica, sans-serif;
+transition: 1s;
+}
+
+/*Анімація кнопки Освітній портал*/
+.osvita:hover{
+color: #fbca98;
+}
+
+/*Кнопка Відгук*/
+.pidval-text{
+position: absolute; 
+text-decoration: none; 
+color: #fefefe; 
+top: 435px;
+left: 400px;
+font-family: Arial, Helvetica, sans-serif;
+transition: 1s;
+}
+
+/*Анімація кнопки Відгук*/
+.pidval-text:hover{
+color: #fbca98;
+}
+
+/*Кнопка Розваги*/
+.rozvagi{
+position: absolute; 
+text-decoration: none; 
+color: #fefefe; 
+top: 390px;
+left: 400px;
+font-family: Arial, Helvetica, sans-serif;
+transition: 1s;
+}
+
+/*Анімація кнопки Розваги*/
+.rozvagi:hover{
+color: #fbca98;
+}
+
+/*Кнопка Кінотеатр*/
+.multfilm{
+position: absolute; 
+text-decoration: none; 
+color: #fefefe; 
+top: 345px;
+left: 400px;
+font-family: Arial, Helvetica, sans-serif;
+transition: 1s;
+}
+
+/*Анімація кнопки Кінотеатр*/
+.multfilm:hover{
+color: #fbca98;
+}
+
+/*Кнопка Вікторини*/
+.viktorina{
+position: absolute; 
+text-decoration: none; 
+color: #fefefe; 
+top: 390px;
+left: 560px;
+font-family: Arial, Helvetica, sans-serif;
+transition: 1s;
+}
+
+/*Анімація кнопки Вікторина*/
+.viktorina:hover{
+color: #fbca98;
+}
+
+/*Кнопка Інтерактивний урок*/
+.show_it_kids{
+position: absolute; 
+text-decoration: none; 
+color: #fefefe; 
+top: 435px;
+left: 560px;
+font-family: Arial, Helvetica, sans-serif;
+transition: 1s;
+}
+
+/*Анімація кнопки Інтерактивний урок*/
+.show_it_kids:hover{
+color: #fbca98;
+}
+
+/*Перехідна лінія 5*/
+.perehid_line5{
+position: relative;
+top: -30px;
+}
+
+.audioPlayer {
+cursor: pointer;
+text-decoration: none;
+display: inline-block;
+transition: transform 0.3s ease;
+}
+
+.audioButton1{
+position: absolute;
+top: 735px;
+left: 810px;
+}
+
+.audioButton2{
+position: absolute;
+top: -30px;
+left: 1230px;
+background-color: #db168c;
+}
+
+.audioButton3{
+position: absolute;
+top: 410px;
+left: 110px;
+width: 40px;
+scale: 1.3;
+}
+
+.audioButton4{
+position: absolute;
+top: 1710px;
+left: 1120px;
+width: 40px;
+scale: 1.3;
+}
+
+.audioButton5{
+position: absolute;
+top: 1850px;
+left: 150px;
+width: 40px;
+scale: 1.3;
+}
